@@ -86,11 +86,10 @@ var getUserRepos = function(user)
         {
             alert("Error: GitHub ?User Not Found");
         }
-        .catch(function(error)
-        {
-            // MNotice this '.catch()'getting chained onto the end of the '.then()' method
-            alert("Unable to connect to GitHub");
-        });
+    })
+    .catch(function(error) {
+        // Notice this '.catch()' getting chained onto the end of the '.then()' method
+        alert("Unable to connect to GitHub");
     });
 };
 
